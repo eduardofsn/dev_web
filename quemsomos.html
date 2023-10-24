@@ -1,44 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body background="./img/fundo2.png">
-    <div class="nav">
-        <img src="./img/logo.png" alt="logo">
-        <div class="bar">
-            <a href="home.html">HOME</a>
-            <a href="quemsomos.html">Quem somos</a>
-            <a href="contatos.html">Contatos</a>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="./img/icone.png" alt="Bootstrap" width="45" height="45">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contatos.html">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./quemsomos.html">Quem Somos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="flex-container3">
+            <div>
+                <div class="flex-title">
+                    <img src="./img/question.png" style="width: 3rem;">
+                    <h1>Quem somos?</h1>
+                </div>
+                <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit fugiat
+                    laboriosam earum
+                    excepturi mollitia numquam inventore debitis error quod corrupti dicta suscipit, recusandae
+                    necessitatibus dolore quia eligendi libero molestias.
+                </p>
+            </div>
+            <div>
+                <div class="flex-title">
+                    <img src="./img/check.png" style="width: 3rem;">
+                    <h1>Qualidades</h1>
+                </div>
+                <ul class="list-group limit">
+                    <li class="list-group-item">Material sempre atualizado</li>
+                    <li class="list-group-item">Tablets em sala de aula</li>
+                    <li class="list-group-item">Professores renomados</li>
+                    <li class="list-group-item">Ótima localização</li>
+                    <li class="list-group-item">Muitos dos nossos estudantes atualmente tem carreiras de sucesso</li>
+                </ul>
+            </div>
+            <div>
+                <div class="flex-title">
+                    <img src="./img/prancheta.png" style="width: 3rem;">
+                    <h1>Objetivos</h1>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit fugiat laboriosam earum
+                    excepturi mollitia numquam inventore debitis error quod corrupti dicta suscipit, recusandae
+                    necessitatibus dolore quia eligendi libero molestias.
+                </p>
+            </div>
         </div>
-    </div>
-    <h1>Quem somos</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit fugiat laboriosam earum excepturi
-        mollitia numquam inventore debitis error quod corrupti dicta suscipit, recusandae necessitatibus dolore quia
-        eligendi libero molestias.
-    </p>
-    <h1>5 motivos para estudar</h1>
-    <ol>
-        <li>Material sempre atualizado</li>
-        <li>Tables em sala de aula</li>
-        <li>Professores renomados</li>
-        <li>Universidade bem avaliada</li>
-        <li>Ótima localização</li>
-    </ol>
-    <hr>
-    <h1>Objetivos</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit fugiat laboriosam earum excepturi
-        mollitia numquam inventore debitis error quod corrupti dicta suscipit, recusandae necessitatibus dolore quia
-        eligendi libero molestias.
-    </p>
-    <h4 align="center">Todos os direitos reservados</h4>
+    </main>
+    <footer class="footer">
+        <p>Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
