@@ -9,14 +9,15 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Home</title>
 </head>
-<body>
+
+<body style="background-color: rgb(41, 49, 56);">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
-                <img src="./img/icone.png" alt="Bootstrap" width="45" height="45">
+                <a class="navbar-brand" href="#">Macrowave</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,13 +25,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contatos.html">Contatos</a>
+                            <a class="nav-link" href="#">Sobre o Projeto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./quemsomos.html">Quem Somos</a>
+                            <a class="nav-link" href="#">Mídias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Demo (Indisponível)</a>
                         </li>
                     </ul>
                 </div>
@@ -38,33 +42,22 @@
         </nav>
     </header>
     <main>
-        <div class="flex-container">
-            <div class="justify" style="flex-grow: 10;">
-                <div class="flex-title">
-                    <img src="./img/question.png" width="45rem">
-                    <h1>Sobre a faculdade</h1>     
-                </div>
+        <div class="mainbody">
+            <div class="mainbody-text">
+                <h1>O mais novo Flash Player!</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur feugiat sapien vitae
-                    elementum. Proin egestas ac turpis at rhoncus. Pellentesque bibendum massa turpis. Pellentesque vel
-                    congue sapien, placerat faucibus massa. Vivamus vel est placerat ligula vestibulum accumsan. Aliquam
-                    erat volutpat. Fusce malesuada, leo eget scelerisque ullamcorper, magna lectus finibus ante.
+                     Macrowave é um projeto brasileiro feito por membros da comunidade de Flash. Desfrute de jogos,
+                    animações e aplicativos clássicos direto do seu navegador ou executável. Mesmo após o fim do suporte
+                    do Flash Player, descubra como estamos mantendo viva essa nostalgia de forma rápida e segura
                 </p>
-                <p> 
-                    Condimentum metus nulla vel sapien. Praesent tempus elementum libero vitae commodo. Proin pharetra
-                    porttitor quam vitae bibendum. Sed viverra nisi metus, in convallis felis luctus sed. Mauris eget
-                    ligula sollicitudin, facilisis tortor sit amet, laoreet ipsum. Pellentesque neque sapien, vehicula
-                    eu ante congue, laoreet sodales ante.
-                </p>
-                <a class="btn btn-dark" href="./quemsomos.html" role="button">Saiba mais</a>
+                <button type="button" class="btn btn-warning">Saiba mais</button>
+                <button type="button" class="btn btn-outline-warning">FAQ</button>
             </div>
             <div>
-                <img src="./img/capa.png" style="max-width: 800px; margin-left: 50px;">
+                <img src="./img/logo.png">
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <p>Todos os direitos reservados.</p>
-    </footer>
 </body>
+
 </html>
