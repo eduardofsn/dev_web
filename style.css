@@ -1,8 +1,8 @@
 .mainbody{
     color: white;
     display: flex;
-    gap: 330px;
-    margin: 180px;
+    gap: 280px;
+    margin: 140px;
     align-items: center;
     flex-wrap: wrap;
 }
