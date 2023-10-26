@@ -1,14 +1,45 @@
-.mainbody{
+.container1{
     color: white;
     display: flex;
-    gap: 280px;
-    margin: 140px;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.mainbody-text{
-    width: 45%;
+.subtext{
+    width: 35rem;
     text-align: justify;
-    flex-wrap: wrap;
+}
+
+.container2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form{
+    display: flex;
+    background-color: rgb(29, 34, 39);
+    margin: auto;
+    flex-direction: column;
+    width: 550px;
+    padding: 80px;
+    margin-top: 35px;
+    height: 600px;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+
+}
+
+.flex-row{
+    display: flex;
+    flex: 1;
+    gap: 40px;
 }

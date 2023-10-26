@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body style="background-color:  rgb(41, 49, 56); color: white;">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
-                <img src="./img/icone.png" alt="Bootstrap" width="45" height="45">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/macrowave.png" alt="Logo" width="30" height="30"
+                        class="d-inline-block align-text-top">
+                    Macrowave
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,10 +31,13 @@
                             <a class="nav-link" aria-current="page" href="./home.html">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link active" href="./quemsomos.html">Sobre o Projeto</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="./contatos.html">Contatos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./quemsomos.html">Quem Somos</a>
+                            <a class="nav-link disabled" aria-disabled="true">Demo (Indisponível)</a>
                         </li>
                     </ul>
                 </div>
@@ -38,47 +45,46 @@
         </nav>
     </header>
     <main>
-        <div class="flex-container3">
-            <div>
-                <div class="flex-title">
-                    <img src="./img/question.png" style="width: 3rem;">
-                    <h1>Quem somos?</h1>
+        <div class="container3">
+            <div class="flex-row">
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <img src="./img/questionmark.png" style="width: 5rem;">
+                        <h3 class="card-title">Quem somos?</h3>
+                        <p class="card-text">Somos uma equipe de developers independentes promovendo projetos sem fins
+                            lucrativos.</p>
+                    </div>
                 </div>
-                <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit fugiat
-                    laboriosam earum
-                    excepturi mollitia numquam inventore debitis error quod corrupti dicta suscipit, recusandae
-                    necessitatibus dolore quia eligendi libero molestias.
-                </p>
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <img src="./img/clock.png" style="width: 5rem;">
+                        <h3 class="card-title">Nosso progresso</h3>
+                        <p class="card-text">Atualmente contamos com um bom andamento do projeto. Você pode ajudar a
+                            melhorar nosso desempenho doando para nossa causa. Lembrando que não é obrigatório e cabe ao
+                            usuário.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div class="flex-title">
-                    <img src="./img/check.png" style="width: 3rem;">
-                    <h1>Qualidades</h1>
+            <div class="flex-row">
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <img src="./img/add.png" style="width: 5rem;">
+                        <h3 class="card-title">Buscamos ajuda</h3>
+                        <p class="card-text">Atualmente contamos com vinte desenvolvedores. Caso você se interesse em
+                            participar do projeto, nos contate pelo Discord oficial.</p>
+                    </div>
                 </div>
-                <ul class="list-group limit">
-                    <li class="list-group-item">Material sempre atualizado</li>
-                    <li class="list-group-item">Tablets em sala de aula</li>
-                    <li class="list-group-item">Professores renomados</li>
-                    <li class="list-group-item">Ótima localização</li>
-                    <li class="list-group-item">Muitos dos nossos estudantes atualmente tem carreiras de sucesso</li>
-                </ul>
-            </div>
-            <div>
-                <div class="flex-title">
-                    <img src="./img/prancheta.png" style="width: 3rem;">
-                    <h1>Objetivos</h1>
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <img src="./img/email.png" style="width: 5rem;">
+                        <h3 class="card-title">Nossas redes</h3>
+                        <p class="card-text">Contamos com uma página no GitHub com todas as especificações do projeto.
+                            Além do nosso Discord oficial, onde são realizadas as expedições de desenvolvimento.</p>
+                    </div>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit fugiat laboriosam earum
-                    excepturi mollitia numquam inventore debitis error quod corrupti dicta suscipit, recusandae
-                    necessitatibus dolore quia eligendi libero molestias.
-                </p>
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <p>Todos os direitos reservados.</p>
-    </footer>
 </body>
 
 </html>
